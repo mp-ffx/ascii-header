@@ -96,6 +96,10 @@ const formatAndPrintLines = async lines => {
     }
   }
 
+  if (alignedBlocks.length === 1) {
+    resultingLines.push(alignedBlocks[0].pop())
+  }
+
   console.log('\n')
   console.log('\n')
   resultingLines.forEach(line => console.log(line))
